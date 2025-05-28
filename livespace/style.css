@@ -1,0 +1,16 @@
+
+.bodySettings {
+  margin          :10px 10px 10px 10px;
+  background-color:#333333;
+  color           :white;
+  line-height     :108%;
+//font-size       :100%;
+  font-family     :'Lucida Grande','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',Meiryo,メイリオ,sans-serif;
+}
+
+img {
+  max-width  :100%;
+  height     :auto;
+  width /***/:auto;
+}
+
