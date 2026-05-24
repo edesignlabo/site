@@ -1,9 +1,13 @@
-<html lang="ja">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<HTML lang="ja">
 <head>
-<title>😄絵文字</title>
 <meta http-equiv="Content-Type" content="text/html; charset=Utf-8">
 <meta http-equiv="Content-Style-Type" content="text/css">
 <meta http-equiv="Content-Script-Type" content="text/javascript">
+<link href="style.css" type="text/css" rel="stylesheet">
+<script src="parts.js" type="text/javascript"></script>
+<script language="javascript">initResponsive();</script>
+<title>😄絵文字</title>
 <script>
 function copy(btn) {
     // ボタンの左隣の要素の「value」を取得してコピー
@@ -12,7 +16,7 @@ function copy(btn) {
 }
 </script>
 <style>
-    body { transform: scale(1.73); transform-origin: top left; }
+    body { transform: scale(1.00); transform-origin: top left; } /* 1.73 */
     .copy-group { margin-bottom:1px; display:flex; align-items:center; gap:1px; }
     /* inputやtextareaの見た目を整える */
     input, textarea { padding:5px; border:1px solid #ccc; border-radius:8px; }
