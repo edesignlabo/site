@@ -1,16 +1,49 @@
-
-.bodySettings {
-  margin          :10px 5px 10px 5px;
-  background-color:#f9f9f9;
-  color           :white;
-  line-height     :108%;
-//font-size       :100%;
-  font-family     :'Lucida Grande','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',Meiryo,メイリオ,sans-serif;
+/* ==============================
+   基本設定（スマホファースト）
+   ============================== */
+body {
+  font-family: 'Yu Gothic', 'YuGothic', '游ゴシック体', '游ゴシック', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #000;
+  background: #f9f9f9;
 }
 
-img {
-  max-width  :100%;
-  height     :auto;
-  width /***/:auto;
+.header, .footer {
+  color: #fff;
+  background: #333;
+  text-align: center;
+  padding: 1px;
 }
 
+/* コンテンツの基本レイアウト（スマホでは縦並び） */
+.container {
+  padding: 8px;
+}
+
+.content {
+  margin-bottom: 20px;
+}
+
+/* ==============================
+   メディアクエリ（768px以上）
+   ============================== */
+@media (min-width: 768px) {
+  /* Flexboxを使って横並びにする */
+  .container {
+    display: flex;
+    gap: 30px;
+/*    max-width: 1100px;*/
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .content {
+/*    flex: 3; /* メイン領域を広く取る */
+    margin-bottom: 0;
+  }
+
+  .sidebar {
+/*    flex: 1; /* サイドバーは狭く */
+  }
+}

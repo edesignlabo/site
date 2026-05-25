@@ -1,36 +1,37 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<HTML lang="ja">
+<!DOCTYPE html>
+<html lang="ja">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=Utf-8">
-<meta http-equiv="Content-Style-Type" content="text/css">
-<meta http-equiv="Content-Script-Type" content="text/javascript">
-<link href="style.css" type="text/css" rel="stylesheet">
-<script src="parts.js" type="text/javascript"></script>
-<script language="javascript">initResponsive();</script>
-<title>😄絵文字</title>
-<script>
-function copy(btn) {
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="apple-touch-icon" href="icon.png">
+  <title>😄絵文字</title>
+  <script>
+  function copy(btn) {
     // ボタンの左隣の要素の「value」を取得してコピー
     const text = btn.previousElementSibling.value;
     navigator.clipboard.writeText(text);
-}
-</script>
-<style>
-
-    body { transform: scale(2.00); transform-origin: top left; } /* 1.73 */
+  }
+  </script>
+  <style>
     .copy-group { margin-bottom:1px; display:flex; align-items:center; gap:1px; }
     /* inputやtextareaの見た目を整える */
     input, textarea { padding:5px; border:1px solid #ccc; border-radius:8px; }
-
     button { border:none; border-radius:10px; background-color:white; }
-
-</style>
+  </style>
 </head>
-<body class=bodySettings>
-<!-------->
-<script>showUa();</script>
+<body>
 
-<table>
+  <!--div class="header">
+    <h1>絵文字 Selection</h1>
+  </div-->
+
+  <div class="container">
+    <div class="content">
+      <!--h2>メインコンテンツ</h2>
+      <p>記事テキスト</p-->
+
+<table style="transform-origin:top left; transform: scale(1.8); ">
 
 <tr><td><div class=copy-group><input type=text size=2 value=&#x1f923; hidden readonly><button onclick=copy(this)>&#x1f923;</button></div></td>
 <td><div class=copy-group><input type=text size=2 value=&#x1f602; hidden readonly><button onclick=copy(this)>&#x1f602;</button></div></td>
@@ -285,6 +286,18 @@ function copy(btn) {
 <td><div class=copy-group><input type=text size=2 value=&#x1fae4; hidden readonly><button onclick=copy(this)>&#x1fae4;</button></div></td></tr>
 </table>
 
-<!-------->
+    </div>
+
+    <!--aside class="sidebar">
+            <h2>サイドバー</h2>
+            <p>関連情報など</p>
+    </aside-->
+
+  </div>
+
+  <!--div class="footer">
+    <p>&copy; 2026 ...</p>
+  </div-->
+
 </body>
 </html>
