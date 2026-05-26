@@ -18,7 +18,7 @@ body {
 
 /* コンテンツの基本レイアウト（スマホでは縦並び） */
 .container {
-  padding: 3px;
+  padding: 4px;
 }
 
 .content {
